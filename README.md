@@ -15,5 +15,10 @@ terragrunt run-all plan -out .tfplan
 
 terragrunt run-all apply .tfplan
 
+```
 
+```
+cd src && terraform plan -var-file=container.tfvars
+
+cd ..
 ```
