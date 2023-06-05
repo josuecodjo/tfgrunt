@@ -28,20 +28,3 @@ variable "mycontainer" {
   })
 }
 
-variable "mapcontainer" {
-  type = map(object({
-    podname   = string
-    labels    = map(string)
-    namespace = string
-    container = map(object({
-      image   = string
-      name    = string
-      ports   = map(object({
-        port     = number
-        protocol = string
-      }))
-    }))
-
-  }))
-  
-}
