@@ -4,7 +4,8 @@
 **/*.tfstate
 **/*.tfstate.* 
 **/.terraform.lock.hcl
-**/backent.tf
+**/backend.tf
+!sub/backend.tf
 **/.tfplan
 **/providers.tf
-backend.tf
+!sub/providers.tf
