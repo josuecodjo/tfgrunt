@@ -6,3 +6,6 @@ locals {
   dir = "${basename(get_terragrunt_dir())}"
 }
 
+inputs = {
+  my_ns = local.dir
+}
